@@ -36,11 +36,11 @@ The raw **AdventureWorks OLTP database** contains dozens of normalized tables (P
 - Created **department-wise summary/backup tables** (SalesOverview, CustomerInfo, HR, Production, Purchasing).
 - Exported these tables into Excel (`adventure_works_analysis`). 
 
-2. **Data Exploration & Analysis (Excel)** (`excel/`)
+3. **Data Exploration & Analysis (Excel)** (`excel/`)
 - Applied column renaming, formatting, and consistency checks.
 - Built **exploratory charts** with in-detail insights.
 
-3. **Visualization (Power BI)** (`power_bi/adventure_works.pbix`)
+4. **Visualization (Power BI)** (`power_bi/adventure_works.pbix`)
 - Imported Excel data into Power BI. 
 - Designed **five one-page dashboards** with slicers, KPI, and charts. 
 
