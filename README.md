@@ -95,7 +95,7 @@ adventure_works/
 - Sales trend tracked YoY (2011–2014).  
 - Breakdown by currency: USD dominates (72M).  
 
-![sales_dashboard](sales_dashboard.png)
+![sales_dashboard](dashboard_screenshots/sales_dashboard.png)
 
 
 
@@ -110,7 +110,7 @@ adventure_works/
 - On-time delivery rate: **99.9%**, exceeding target (95%).
 
 
-![procurement_dashboard](procurement_dashboard.png)
+![procurement_dashboard](dashboard_screenshots/procurement_dashboard.png)
 
 
 
@@ -125,7 +125,7 @@ adventure_works/
 - Inventory value by Inventory Location. 
 - Category ranked by Margin Contribution. 
 
-![production_dashboard](production_dashboard.png)
+![production_dashboard](dashboard_screenshots/production_dashboard.png)
 
 ### 4. Customer Dashboard
 *Customer Behavior, Demographics, and Segmentation*
@@ -137,7 +137,7 @@ adventure_works/
 - Province: California, Washington, and England in top spots. 
 - Education level vs spending shows correlation with income. 
 
-![customer_dashboard](customer_dashboard.png)
+![customer_dashboard](dashboard_screenshots/customer_dashboard.png)
 
 
 ### 5. HR Analytics Dashboard
@@ -149,7 +149,7 @@ adventure_works/
 - Hiring peaked in **2008 (150 hires)**, then declined. 
 - 89.5% of employees are in the low salary band, very few in medium/high.
 
-![hr_dashboard](hr_dashboard.png)
+![hr_dashboard](dashboard_screenshots/hr_dashboard.png)
 
 ---
 
