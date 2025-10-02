@@ -161,6 +161,44 @@ adventure_works/
 - **HR** - Workforce skewed toward Production; 70% male, and salary bands concentrated in low pay range. 
 
 ---
+## Data Transformations & Assumptions
+
+To make the AdventureWorks dataset more **business-analytics ready**, several transformations and assumptions were applied:
+
+### Sales
+- Filled missing `Currency` values with **USD**.  
+- Defaulted missing `Fx_Avg_Rate` to **1.0**.  
+- Derived fields:
+  - `Unit_Price` = TotalOrderValue / TotalOrderQty
+  - `Tax_Paid` = TaxRate × TotalOrderValue
+
+### Purchasing
+- Added `Actual_Lead_Time` = ShipDate – OrderDate.  
+- Created `On_Time_Flag` (1 if delivered by due date, else 0).  
+- Derived `Rejection_Cost` = Rejected_Qty × Unit_Price.  
+- `Vendor_Spend` calculated using SUMIFS on Amount Due.  
+- Flagged invalid cases as `Bad_ReceiptDate`.  
+
+### HR
+- `Tenure_Years` from JobStartDate.  
+- `Age` from EmployeeBirthDate.  
+- `Age_Bucket_Start` (10-year grouping).  
+- `Tenure_Bucket` = High / Medium / Low banding.
+
+### Customer
+- `Has_Email` (bit flag).  
+- Missing Education / Marital_Status set to **Unknown**.  
+- `HomeOwner_Status` (Yes/No/Unknown).  
+- `Spending_Bracket`: Low, Mid, High, Refund/Negative.  
+- Extracted `First_Purchase_Date`, Year, and Month.  
+
+### Production
+- `Margin_Band`: Low (<65%) or High.  
+- `Days_Since_Last_WO` from Last Work Order.  
+- Flags for:
+  - `Stockout_Risk` (Current Inventory < Safety Stock)  
+  - `Overstock_Flag` (Inventory > 2× Safety Stock)  
+---
 
 ## Key Skills Demonstrated
 - **SQL** - Joins, CTEs, transformation, schema-to-domain consolidation. 
